@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fce7db91-6868-4cc0-9cc0-ff205f6a1420">
+  <producedTypes>
+    <objectType typeId="99efa22e-2114-448b-baad-5b9da33458f4" valueTypeId="af637d0d-01d7-4f20-b234-978a07c256f1"/>
+    <refType typeId="d528524d-9873-4a33-8422-55d3a462d3f9" valueTypeId="f7c5814e-835d-4a75-bf53-b94ca72428ec"/>
+    <selectionType typeId="581799e0-e4ea-46f9-984f-fc5d5c2aae58" valueTypeId="e24ed3a2-a7e6-4729-b0b1-91d13acb711e"/>
+    <listType typeId="6158025b-a4f6-40db-a9cb-d83e989f5a0d" valueTypeId="06606e98-9a07-4a7b-9bc6-e068cf5aeeb7"/>
+    <managerType typeId="050f8ea7-deba-4699-9601-36910902d1ca" valueTypeId="07e6f1e5-4d75-4108-87a3-70d48a4d7104"/>
+  </producedTypes>
+  <name>ПоступлениеТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поступление товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПоступлениеТоваров.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Поступление товаров</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Поступления товаров</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПоступлениеТоваров.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="3401710c-8ffd-4b42-bcea-d8aaa288d094">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="7a54a567-5159-48d8-adad-920f1ce87c51">
+    <producedTypes>
+      <objectType typeId="323288cb-a3d5-479a-b39f-a03b3239cec6" valueTypeId="3be524e9-1314-4f1d-8c05-ac5963df0d45"/>
+      <rowType typeId="b59760ab-f2a2-4dc9-bb8f-2dd7e2bbacd0" valueTypeId="dd17437d-9243-42c0-ac83-fb58315ac547"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="4d3a485b-02be-46c6-907c-5e4635843a53">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <createOnInput>Use</createOnInput>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a135f5d9-c7fe-4c36-9b89-a41e6aba287b">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>DefinedType.КоличествоПоложительный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="446c91f3-9aec-46dc-af0a-42e7fc004df8">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДеньгиПоложительный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1c3ce811-8597-4b13-ba8a-fd853fb7f2ff">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДеньгиПоложительный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
