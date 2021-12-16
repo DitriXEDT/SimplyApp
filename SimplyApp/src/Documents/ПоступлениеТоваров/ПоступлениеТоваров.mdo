@@ -72,7 +72,12 @@
         <value>Количество</value>
       </synonym>
       <type>
-        <types>DefinedType.КоличествоПоложительный</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>18</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -86,7 +91,12 @@
         <value>Цена</value>
       </synonym>
       <type>
-        <types>DefinedType.ДеньгиПоложительный</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -100,7 +110,12 @@
         <value>Сумма</value>
       </synonym>
       <type>
-        <types>DefinedType.ДеньгиПоложительный</types>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

@@ -39,8 +39,6 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
-  <definedTypes>DefinedType.ДеньгиПоложительный</definedTypes>
-  <definedTypes>DefinedType.КоличествоПоложительный</definedTypes>
   <catalogs>Catalog.Номенклатура</catalogs>
   <documents>Document.ПоступлениеТоваров</documents>
 </mdclass:Configuration>
